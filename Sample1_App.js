@@ -1,5 +1,5 @@
 function App(){
-  const title = 'Blog Spot'
+  const title = 'Blog Post'
   const body = 'This is my blog post'
  const comments = [
   {id:1, text:'Comment one'},
@@ -32,7 +32,7 @@ export default App
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Out Put
 
-BLOG SPOT
+BLOG POST
 This is my blog post
 
 
