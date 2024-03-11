@@ -1,3 +1,5 @@
+/'Without creating Components folder, just included the components function in App.js file itself.'/
+
 function App(){
   const title = 'Blog Post'
   const body = 'This is my blog post'
