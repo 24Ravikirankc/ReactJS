@@ -1,0 +1,25 @@
+// Class Component Example below
+import React, { Component } from 'react'
+class Welcome extends Component {
+  render() {
+    return (
+      <div>
+        <h2>Welcome to the Class Component</h2>
+      </div>
+    )
+  }
+}
+export default Welcome;
+
+// Example of Function Component
+
+import React from 'react'
+function Greet()
+{
+    return <h1> Hello wish</h1>;
+    
+}
+
+// Example of Arrow function component
+const Greet = () => <h2>Hello Theju</h2>
+export default Greet; 
