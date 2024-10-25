@@ -1,0 +1,51 @@
+// Props(Properties): In React Js, the props are a type of object where the value of attributes of a tag is stored. the word "props" implies "properties", and its working functionality is quite similar to HTML attributes.
+
+*Greet Page created under the Components
+
+import React from 'react'
+
+const Greet = props => {
+    console.log(props);
+return (
+    <div>
+      <h2>Hello {props.name} H/o {props.wifeName}</h2>
+      <h1>{props.children} daughter of {props.name} and {props.wifeName}</h1>
+    </div>
+)
+}
+
+export default Greet; 
+
+*Welcome Page created under the Components:
+import React, { Component } from 'react'
+
+class Welcome extends Component {
+  render() {
+    return (
+      <div>
+        <h2>Welcome to the Class Component</h2>
+      </div>
+    )
+  }
+}
+
+export default Welcome;
+
+*APP Page:
+import './App.css';
+import Greet from './components/Greet'
+import Welcome from './components/Welcome';
+
+
+function App() {
+  return (
+    <div className="App">
+        <Greet name="Kiran" wifeName="theju" />
+        <button>Click Here</button>
+        <Greet name="ravi" wifeName="Thajashwini" children="Avani"/>
+        <Welcome name="Ram" wifeName="Seetha" />
+    </div>
+  );
+}
+
+export default App;
